@@ -1,0 +1,215 @@
+:root {
+  --cafe: rgb(113, 73, 63);
+  --naranja: rgb(235, 117, 33);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+html {
+  font-size: 62.5%;
+}
+/*/////////////////////////*/
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.caja {
+  min-width: 300px;
+  min-height: 300px;
+  /* background-color: rgb(203, 203, 203); */
+  background-image: url(./assets/4.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.contenedor {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  /* background-color: rgba(255, 0, 0, 0.307); */
+}
+.cuerpo-delante,
+.cuerpo-atras {
+  /* background-color: rgba(0, 0, 255, 0.233); */
+  position: absolute;
+}
+
+.cuerpo-delante div:nth-child(1) {
+  position: absolute;
+  display: flex;
+  background-color: rgb(67, 246, 7);
+  background-color: var(--naranja);
+  box-shadow: 0 5px 5px 5px black inset;
+
+  width: 135px;
+  height: 205px;
+  border-radius: 50%;
+  top: 73px;
+  left: 10px;
+}
+
+.cuerpo-delante div:nth-child(2) {
+  position: absolute;
+  display: flex;
+  background-color: rgb(246, 234, 7);
+  background-color: var(--naranja);
+
+  box-shadow: 0 5px 5px 5px black inset;
+
+  width: 135px;
+  height: 212px;
+  border-radius: 50%;
+  top: 67px;
+  left: 155px;
+}
+
+.cuerpo-delante div:nth-child(3) {
+  position: absolute;
+  display: flex;
+  background-color: rgb(204, 0, 255);
+  background-color: var(--naranja);
+
+  width: 135px;
+  height: 225px;
+  border-radius: 50%;
+  top: 68px;
+  left: 120px;
+
+  box-shadow: 0 5px 5px 5px black inset;
+}
+
+.cuerpo-delante div:nth-child(4) {
+  position: absolute;
+  display: flex;
+  background-color: rgb(59, 35, 194);
+  background-color: var(--naranja);
+
+  box-shadow: 0 5px 5px 5px black inset;
+
+  width: 135px;
+  height: 225px;
+  border-radius: 50%;
+  top: 68px;
+  left: 48px;
+}
+/* /////////////////////////////////////// */
+.cuerpo-detras div:nth-child(1) {
+  position: absolute;
+  display: flex;
+  background-color: rgb(4, 255, 71);
+  background-color: var(--naranja);
+
+  box-shadow: 0 5px 5px 5px black inset;
+
+  width: 110px;
+  height: 212px;
+  border-radius: 49%;
+  top: 55px;
+  left: 71px;
+}
+
+.cuerpo-detras div:nth-child(2) {
+  position: absolute;
+  display: flex;
+  background-color: rgb(255, 4, 4);
+  background-color: var(--naranja);
+
+  box-shadow: 0 5px 5px 5px black inset;
+
+  width: 110px;
+  height: 212px;
+  border-radius: 49%;
+  top: 55px;
+  left: 121px;
+}
+
+.cuerpo-detras div:nth-child(3) {
+  position: absolute;
+  display: flex;
+  background-color: rgb(7, 218, 246);
+  background-color: var(--naranja);
+
+  box-shadow: 0 5px 5px 5px black inset;
+
+  width: 120px;
+  height: 212px;
+
+  border-radius: 50%;
+  top: 60px;
+  left: 150px;
+}
+
+.cuerpo-detras div:nth-child(4) {
+  position: absolute;
+  display: flex;
+  background-color: rgb(255, 4, 205);
+  background-color: var(--naranja);
+
+  box-shadow: 0 5px 5px 5px black inset;
+
+  width: 120px;
+  height: 212px;
+
+  border-radius: 49%;
+  top: 60px;
+  left: 31px;
+}
+
+/* /////////////////////////////////////// */
+.rabo {
+  position: absolute;
+}
+.rabo div {
+  position: absolute;
+  display: flex;
+  /* background-color: rgba(4, 42, 255, 0.652); */
+
+  width: 180px;
+  height: 200px;
+  border-radius: 35%;
+  top: 86px;
+  left: 62px;
+}
+
+.rabo div {
+  position: absolute;
+  display: flex;
+  background-color: var(--cafe);
+  width: 27px;
+  height: 70px;
+  top: 20px;
+  left: 138px;
+  border-radius: 72% 0% 0% 0%;
+}
+
+.rabo div:before {
+  content: '';
+  background-color: var(--cafe);
+  width: 23px;
+  height: 55px;
+  position: absolute;
+  transform: rotateZ(35deg);
+  top: -17px;
+  left: 10px;
+  border-radius: 35% 25% 0 45%;
+}
+.rabo div:after {
+  content: '';
+  background-color: var(--cafe);
+  width: 30px;
+  height: 30px;
+  transform: rotateZ(45deg);
+  top: 40px;
+  position: absolute;
+}

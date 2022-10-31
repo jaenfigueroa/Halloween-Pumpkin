@@ -25,7 +25,7 @@ main {
   min-width: 300px;
   min-height: 300px;
   /* background-color: rgb(203, 203, 203); */
-  /* background-image: url(./assets/4.jpg); */
+  background-image: url(./assets/4.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -220,7 +220,7 @@ main {
   height: 300px;
   /* background-color: rgba(0, 0, 255, 0.296); */
 }
-.cara div:nth-child(1) {
+.ojo-izquierdo {
   background-color: rgb(0, 255, 26);
   position: absolute;
   width: 65px;
@@ -237,7 +237,7 @@ main {
   transform: rotate(-10deg);
 }
 
-.cara div:nth-child(2) {
+.ojo-derecho {
   background-color: rgb(0, 255, 26);
   position: absolute;
   width: 65px;
@@ -254,7 +254,7 @@ main {
   transform: rotate(10deg);
 }
 
-.cara div:nth-child(3) {
+.nariz {
   background-color: rgb(0, 255, 26);
   position: absolute;
   width: 50px;
@@ -269,7 +269,7 @@ main {
 
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
 }
-.cara div:nth-child(3):after {
+.nariz:after {
   position: absolute;
   content: '';
   width: 40px;
@@ -279,7 +279,7 @@ main {
   top: 3px;
   left: -17px;
 }
-.cara div:nth-child(3):before {
+.nariz:before {
   position: absolute;
   content: '';
   width: 40px;
@@ -289,7 +289,7 @@ main {
   top: 3px;
   left: 1px;
 }
-.cara div:nth-child(4) {
+.boca-izquierda {
   /* background-color: rgba(255, 13, 247, 0.329); */
   position: absolute;
 
@@ -301,7 +301,7 @@ main {
   border-radius: 0 0 0 100%;
 }
 
-.cara div:nth-child(5) {
+.boca-derecha {
   /* background-color: rgba(255, 13, 247, 0.323); */
   position: absolute;
 
@@ -311,4 +311,43 @@ main {
   left: 150px;
   border-bottom: 1.7em solid rgb(255, 255, 255);
   border-radius: 0 0 100% 0;
+}
+.contenedor-dientes {
+  /* background-color: rgba(0, 255, 34, 0.182); */
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.contenedor-dientes > div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--naranja);
+  /* background-color: blueviolet; */
+}
+
+.contenedor-dientes > div:nth-child(1) {
+  top: 215px;
+  left: 140px;
+}
+.contenedor-dientes > div:nth-child(2) {
+  top: 210px;
+  left: 95px;
+  transform: rotateZ(20deg);
+}
+.contenedor-dientes > div:nth-child(3) {
+  top: 210px;
+  left: 185px;
+  transform: rotateZ(-20deg);
+}
+.contenedor-dientes > div:nth-child(4) {
+  top: 240px;
+  left: 115px;
+  transform: rotateZ(10deg);
+}
+.contenedor-dientes > div:nth-child(5) {
+  top: 240px;
+  left: 165px;
+  transform: rotateZ(-10deg);
 }

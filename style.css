@@ -1,6 +1,7 @@
 :root {
   --cafe: rgb(113, 73, 63);
-  --naranja: rgb(235, 117, 33);
+  --naranja: rgb(255, 89, 0);
+  --naranja: rgb(255, 55, 0);
 }
 
 * {
@@ -24,7 +25,7 @@ main {
   min-width: 300px;
   min-height: 300px;
   /* background-color: rgb(203, 203, 203); */
-  background-image: url(./assets/4.jpg);
+  /* background-image: url(./assets/4.jpg); */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -212,4 +213,102 @@ main {
   transform: rotateZ(45deg);
   top: 40px;
   position: absolute;
+}
+/* ///////////////////////// */
+.cara {
+  width: 300px;
+  height: 300px;
+  /* background-color: rgba(0, 0, 255, 0.296); */
+}
+.cara div:nth-child(1) {
+  background-color: rgb(0, 255, 26);
+  position: absolute;
+  width: 65px;
+  height: 35px;
+  top: 128px;
+  left: 170px;
+
+  border-top: 0px solid red;
+  border-right: 15px solid rgb(17, 0, 255);
+  border-bottom: 10px solid rgb(69, 171, 255);
+  border-left: 0px solid rgb(34, 255, 0);
+
+  clip-path: polygon(84% 0, 0 91%, 100% 98%);
+  transform: rotate(-10deg);
+}
+
+.cara div:nth-child(2) {
+  background-color: rgb(0, 255, 26);
+  position: absolute;
+  width: 65px;
+  height: 35px;
+  top: 128px;
+  left: 75px;
+
+  border-top: 0px solid red;
+  border-left: 15px solid rgb(0, 4, 255);
+  border-bottom: 10px solid rgb(69, 171, 255);
+  border-right: 0px solid rgb(34, 255, 0);
+
+  clip-path: polygon(5% 0, 100% 90%, 0 98%);
+  transform: rotate(10deg);
+}
+
+.cara div:nth-child(3) {
+  background-color: rgb(0, 255, 26);
+  position: absolute;
+  width: 50px;
+  height: 35px;
+  top: 165px;
+  left: 130px;
+
+  border-top: 0px solid red;
+  border-left: 13px solid rgb(0, 38, 255);
+  border-bottom: 7px solid rgb(253, 108, 255);
+  border-right: 13px solid rgb(51, 0, 255);
+
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+.cara div:nth-child(3):after {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 10px;
+  background-color: rgb(47, 0, 255);
+  transform: rotateZ(-67deg);
+  top: 3px;
+  left: -17px;
+}
+.cara div:nth-child(3):before {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 10px;
+  background-color: rgb(0, 34, 255);
+  transform: rotateZ(67deg);
+  top: 3px;
+  left: 1px;
+}
+.cara div:nth-child(4) {
+  /* background-color: rgba(255, 13, 247, 0.329); */
+  position: absolute;
+
+  width: 5em;
+  height: 4em;
+  top: 190px;
+  left: 70px;
+  border-bottom: 1.7em solid rgb(255, 255, 255);
+  border-radius: 0 0 0 100%;
+}
+
+.cara div:nth-child(5) {
+  /* background-color: rgba(255, 13, 247, 0.323); */
+  position: absolute;
+
+  width: 5em;
+  height: 4em;
+  top: 190px;
+  left: 150px;
+  border-bottom: 1.7em solid rgb(255, 255, 255);
+  border-radius: 0 0 100% 0;
 }

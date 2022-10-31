@@ -1,1 +1,1 @@
-https://jaenfigueroa.github.com/Halloween-Pumpkin
+https://jaenfigueroa.github.io/Halloween-Pumpkin/

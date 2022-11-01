@@ -36,6 +36,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.header {
+  display: none;
+}
+
 main {
   display: flex;
   align-items: center;

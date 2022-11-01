@@ -8,6 +8,8 @@
   --celeste: rgb(69, 171, 255);
   --azul: rgb(31, 31, 31);
   --celeste: rgb(111, 111, 111);
+  --sombra: rgb(0, 0, 0, 0.5);
+  --luna: rgb(255, 247, 100);
 }
 
 * {
@@ -337,12 +339,12 @@ main {
   justify-content: center;
 }
 .sombra div {
-  background-color: black;
+  background-color: var(--sombra);
   width: 80%;
   height: 15%;
   border-radius: 100%;
   position: absolute;
-  box-shadow: 0rem 0rem 2rem 2rem black;
+  box-shadow: 0rem 0rem 2rem 2rem var(--sombra);
   bottom: 25px;
 
   animation: sombra 3s linear infinite alternate-reverse;
@@ -352,7 +354,7 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  box-shadow: 30px 10px 0 #ffffff;
+  box-shadow: 30px 10px 0 var(--luna);
 
   position: absolute;
   top: 10%;
@@ -365,7 +367,7 @@ main {
 @keyframes luna {
   to {
     transform: translateX(-100vw);
-    box-shadow: -10px -5px 0 #ffffff;
+    box-shadow: -10px -5px 0 var(--luna);
   }
 }
 

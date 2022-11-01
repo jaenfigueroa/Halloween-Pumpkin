@@ -30,8 +30,12 @@ body {
   background: linear-gradient(#082c0c 10%, #abc841 55%, #220a33 20%);
 
   box-shadow: 0 0 500px 50px black inset;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+body::-webkit-scrollbar {
+  display: none;
+}
+
 main {
   display: flex;
   align-items: center;

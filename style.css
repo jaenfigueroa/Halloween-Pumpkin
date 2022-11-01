@@ -54,7 +54,7 @@ main {
   justify-content: center;
   /* border: 0.1rem solid black; */
 
-  animation: calabaza 1s linear infinite alternate-reverse;
+  animation: calabaza 3s linear infinite alternate-reverse;
   transform: scale(1.1, 0.8);
 }
 .contenedor {
@@ -410,7 +410,7 @@ main {
   box-shadow: 0rem 0rem 2rem 2rem black;
   bottom: 25px;
 
-  animation: sombra 1s linear infinite alternate-reverse;
+  animation: sombra 3s linear infinite alternate-reverse;
 }
 
 .luna {
@@ -425,15 +425,53 @@ main {
 }
 /* ///////////////////////////////// */
 @keyframes sombra {
-  to {
+  0% {
+    /* background-color: blue; */
+    transform: translateX(0px);
+    width: 80%;
+  }
+  25% {
+    /* background-color: yellow; */
+    transform: translateX(100px);
     width: 50%;
     height: 10%;
-    box-shadow: 0rem 0rem 1rem 1rem black;
+  }
+  50% {
+    /* background-color: green; */
+    transform: translateX(100px);
+    width: 80%;
+  }
+  75% {
+    /* background-color: aqua; */
+    transform: translateX(-100px);
+    width: 50%;
+    height: 10%;
+  }
+  100% {
+    /* background-color: red; */
+    transform: translateX(-100px);
   }
 }
 
 @keyframes calabaza {
-  to {
-    transform: translateY(-125px) scale(1, 1.05);
+  0% {
+    /* background-color: blue; */
+    transform: translateY(0px) scale(1.1, 0.8) translateX(0px);
+  }
+  25% {
+    /* background-color: yellow; */
+    transform: translateY(-125px) scale(1, 1.05) translateX(100px);
+  }
+  50% {
+    /* background-color: green; */
+    transform: translateY(0px) scale(1.1, 0.8) translateX(100px);
+  }
+  75% {
+    /* background-color: aqua; */
+    transform: translateY(-125px) scale(1, 1.05) translateX(-100px);
+  }
+  100% {
+    /* background-color: red; */
+    transform: translateY(0px) scale(1.1, 0.8) translateX(-100px);
   }
 }

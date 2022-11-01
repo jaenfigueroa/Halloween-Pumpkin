@@ -31,6 +31,8 @@ body {
   /* background: linear-gradient(#082c0c 10%, #abc841 55%, #001400 20%); */
 
   background: linear-gradient(#082c0c 10%, #abc841 55%, #220a33 20%);
+
+  box-shadow: 0 0 500px 0px black inset;
 }
 main {
   display: flex;

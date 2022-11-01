@@ -246,7 +246,7 @@ main {
   position: absolute;
   border-radius: 0 50% / 0 100%;
   background: #5cb85c;
-  border: 1px solid #162016;
+  border: 0.5px solid #162016;
   left: 14px;
   top: -8px;
   box-shadow: 0 0 50px 5px #162016 inset;
@@ -377,23 +377,23 @@ main {
 .contenedor-dientes > div {
   position: absolute;
   width: 2rem;
-  height: 2rem;
+  height: 1.1rem;
   background-color: var(--naranja-claro);
 }
 
 .contenedor-dientes > div:nth-child(1) {
-  top: 21.5rem;
+  top: 22.7rem;
   left: 14rem;
   border-bottom: 5px solid var(--azul);
 }
 .contenedor-dientes > div:nth-child(2) {
-  top: 21rem;
+  top: 21.8rem;
   left: 9.5rem;
   transform: rotateZ(20deg);
   border-bottom: 5px solid var(--azul);
 }
 .contenedor-dientes > div:nth-child(3) {
-  top: 21rem;
+  top: 21.9rem;
   left: 18.5rem;
   transform: rotateZ(-20deg);
   border-bottom: 5px solid var(--celeste);

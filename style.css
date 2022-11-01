@@ -313,26 +313,31 @@ main {
 .contenedor-dientes > div:nth-child(1) {
   top: 21.5rem;
   left: 14rem;
+  border-bottom: 5px solid var(--celeste);
 }
 .contenedor-dientes > div:nth-child(2) {
   top: 21rem;
   left: 9.5rem;
   transform: rotateZ(20deg);
+  border-bottom: 5px solid var(--celeste);
 }
 .contenedor-dientes > div:nth-child(3) {
   top: 21rem;
   left: 18.5rem;
   transform: rotateZ(-20deg);
+  border-bottom: 5px solid var(--celeste);
 }
 .contenedor-dientes > div:nth-child(4) {
   top: 24rem;
   left: 11.5rem;
   transform: rotateZ(10deg);
+  border-top: 5px solid var(--celeste);
 }
 .contenedor-dientes > div:nth-child(5) {
   top: 24rem;
   left: 16.5rem;
   transform: rotateZ(-10deg);
+  border-top: 5px solid var(--celeste);
 }
 
 /* //////////////////////////////// */

@@ -1,10 +1,12 @@
 :root {
   --cafe-claro: rgb(113, 73, 63);
   --cafe-oscuro: rgb(67, 42, 36);
+  /* --naranja-claro: rgb(255, 85, 37); */
+  --naranja-claro: rgb(255, 74, 24);
   --naranja-claro: rgb(255, 72, 0);
   --naranja-claro: rgb(255, 55, 0);
-  /* --naranja-claro: rgb(255, 0, 0); */
-  /* --naranja-claro: rgb(255, 85, 37); */
+  --naranja-claro: rgb(255, 0, 0);
+
   --naranja-oscuro: rgb(255, 0, 0);
   --naranja-oscuro: rgb(191, 0, 38);
   --amarillo: rgb(249, 255, 165);
@@ -489,5 +491,21 @@ main {
   }
   100% {
     transform: translateY(0px) scale(1.1, 0.8) translateX(-100px);
+  }
+}
+
+/* GITHUB LOGO */
+#logoGithub:hover #cola {
+  animation: moverCola 0.56s ease-in-out;
+}
+
+@keyframes moverCola {
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
   }
 }

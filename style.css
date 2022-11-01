@@ -4,6 +4,10 @@
   --naranja-claro: rgb(255, 72, 0);
   --naranja-oscuro: rgb(255, 0, 0);
   --amarillo: rgb(249, 255, 165);
+  --azul: rgb(0, 4, 255);
+  --celeste: rgb(69, 171, 255);
+  --azul: rgb(31, 31, 31);
+  --celeste: rgb(111, 111, 111);
 }
 
 * {
@@ -18,15 +22,17 @@ html {
 }
 /*/////////////////////////*/
 body {
-  background: linear-gradient(
+  /* background: linear-gradient(
     rgb(2, 2, 136) 10%,
     rgb(0, 238, 255) 55%,
     rgb(46, 36, 36) 20%
   );
 
-  background: linear-gradient(#082c0c 10%, #abc841 55%, #220a33 20%);
+  background: linear-gradient(#082c0c 10%, #abc841 55%, #220a33 20%); */
 
-  box-shadow: 0 0 500px 50px black inset;
+  background: linear-gradient(#082c0c 10%, #85ff60 55%, #220a33 20%);
+
+  /* box-shadow: 0 0 500px 50px black inset; */
   overflow: hidden;
 }
 body::-webkit-scrollbar {
@@ -201,30 +207,30 @@ main {
   height: 30rem;
 }
 .ojo-izquierdo {
-  background: linear-gradient(rgb(255, 214, 127), rgb(225, 255, 0));
+  background: var(--amarillo);
   position: absolute;
   width: 6.5rem;
   height: 3.5rem;
   top: 12.8rem;
   left: 17rem;
 
-  border-right: 1.5rem solid rgb(17, 0, 255);
-  border-bottom: 1rem solid rgb(69, 171, 255);
+  border-right: 1.5rem solid var(--azul);
+  border-bottom: 1rem solid var(--celeste);
 
   clip-path: polygon(84% 0, 0 91%, 100% 98%);
   transform: rotate(-10deg);
 }
 
 .ojo-derecho {
-  background: linear-gradient(rgb(255, 198, 145), rgb(225, 255, 0));
+  background: var(--amarillo);
   position: absolute;
   width: 6.5rem;
   height: 3.5rem;
   top: 12.8rem;
   left: 7.5rem;
 
-  border-left: 1.5rem solid rgb(0, 4, 255);
-  border-bottom: 1rem solid rgb(69, 171, 255);
+  border-left: 1.5rem solid var(--azul);
+  border-bottom: 1rem solid var(--celeste);
 
   clip-path: polygon(5% 0, 100% 90%, 0 98%);
   transform: rotate(10deg);
@@ -238,9 +244,9 @@ main {
   top: 16.5rem;
   left: 13rem;
 
-  border-left: 1.3rem solid rgb(0, 38, 255);
-  border-bottom: 0.7rem solid rgb(253, 108, 255);
-  border-right: 1.3rem solid rgb(51, 0, 255);
+  border-left: 1.3rem solid var(--azul);
+  border-bottom: 0.7rem solid var(--celeste);
+  border-right: 1.3rem solid var(--azul);
 
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
 }
@@ -249,7 +255,7 @@ main {
   content: '';
   width: 4rem;
   height: 1rem;
-  background-color: rgb(47, 0, 255);
+  background-color: var(--azul);
   transform: rotateZ(-67deg);
   top: 0.3rem;
   left: -1.7rem;
@@ -259,7 +265,7 @@ main {
   content: '';
   width: 4rem;
   height: 1rem;
-  background-color: rgb(0, 34, 255);
+  background-color: var(--azul);
   transform: rotateZ(67deg);
   top: 0.3rem;
   left: 0.1rem;
@@ -271,7 +277,7 @@ main {
   height: 4em;
   top: 19rem;
   left: 7.1rem;
-  border-bottom: 1.7em solid white;
+  border-bottom: 1.7em solid var(--amarillo);
 
   border-radius: 0 0 0 100%;
 }
@@ -283,7 +289,7 @@ main {
   height: 4em;
   top: 19rem;
   left: 15rem;
-  border-bottom: 1.7em solid white;
+  border-bottom: 1.7em solid var(--amarillo);
   border-radius: 0 0 100% 0;
 }
 .contenedor-dientes {

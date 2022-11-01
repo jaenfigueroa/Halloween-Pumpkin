@@ -1,7 +1,7 @@
 ### Preview
 
 <div >
-  <img src="./assets/halloween.gif" align="center" style="width: 70%" />
+  <img src="./assets/halloween.gif" align="center" style="width: 60%" />
 </div>
 
 ### Website

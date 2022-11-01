@@ -4,7 +4,7 @@
   /* --naranja-claro: rgb(255, 85, 37); */
   --naranja-claro: rgb(255, 74, 24);
   --naranja-claro: rgb(255, 72, 0);
-  --naranja-claro: rgb(255, 55, 0);
+  /* --naranja-claro: rgb(255, 55, 0); */
   --naranja-claro: rgb(255, 0, 0);
 
   --naranja-oscuro: rgb(255, 0, 0);
@@ -384,7 +384,7 @@ main {
 }
 
 .contenedor-dientes > div:nth-child(1) {
-  top: 22.7rem;
+  top: 22.6rem;
   left: 14rem;
   border-bottom: 5px solid var(--azul);
 }

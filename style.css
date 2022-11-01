@@ -1,7 +1,8 @@
 :root {
-  --cafe: rgb(113, 73, 63);
-  --naranja: rgb(255, 89, 0);
-  --naranja: rgb(255, 55, 0);
+  --cafe-claro: rgb(113, 73, 63);
+  --cafe-oscuro: rgb(67, 42, 36);
+  --naranja-claro: rgb(255, 89, 0);
+  --naranja-oscuro: rgb(255, 55, 0);
 }
 
 * {
@@ -14,6 +15,15 @@ html {
   font-size: 62.5%;
 }
 /*/////////////////////////*/
+body {
+  /* background: linear-gradient(
+    rgb(2, 2, 136) 10%,
+    rgb(0, 238, 255) 55%,
+    rgb(46, 36, 36) 20%
+  ); */
+
+  background: linear-gradient(#082c0c 10%, #abc841 55%, #001400 20%);
+}
 main {
   display: flex;
   align-items: center;
@@ -21,9 +31,9 @@ main {
   height: 100vh;
 }
 
-.caja {
-  min-width: 300px;
-  min-height: 300px;
+.calabaza {
+  min-width: 30rem;
+  min-height: 30rem;
   /* background-color: rgb(203, 203, 203); */
   /* background-image: url(./assets/4.jpg); */
   background-size: contain;
@@ -32,12 +42,15 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid black; */
+  /* border: 0.1rem solid black; */
+
+  animation: calabaza 1s linear infinite alternate-reverse;
+  transform: scale(1.1, 0.8);
 }
 .contenedor {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 30rem;
+  height: 30rem;
   /* background-color: rgba(255, 0, 0, 0.307); */
 }
 .cuerpo-delante,
@@ -50,188 +63,201 @@ main {
   position: absolute;
   display: flex;
   background-color: rgb(67, 246, 7);
-  background-color: var(--naranja);
-  box-shadow: 0 5px 5px 5px black inset;
+  background-color: var(--naranja-claro);
+  box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
 
-  width: 135px;
-  height: 205px;
+  width: 13.5rem;
+  height: 20.5rem;
   border-radius: 50%;
-  top: 73px;
-  left: 10px;
+  top: 7.3rem;
+  left: 1rem;
 }
 
 .cuerpo-delante div:nth-child(2) {
   position: absolute;
   display: flex;
   background-color: rgb(246, 234, 7);
-  background-color: var(--naranja);
+  background-color: var(--naranja-claro);
 
-  box-shadow: 0 5px 5px 5px black inset;
+  box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
 
-  width: 135px;
-  height: 212px;
+  width: 13.5rem;
+  height: 21.2rem;
   border-radius: 50%;
-  top: 67px;
-  left: 155px;
+  top: 6.7rem;
+  left: 15.5rem;
 }
 
 .cuerpo-delante div:nth-child(3) {
   position: absolute;
   display: flex;
   background-color: rgb(204, 0, 255);
-  background-color: var(--naranja);
+  background-color: var(--naranja-claro);
 
-  width: 135px;
-  height: 225px;
+  width: 13.5rem;
+  height: 22.5rem;
   border-radius: 50%;
-  top: 68px;
-  left: 120px;
+  top: 6.8rem;
+  left: 12rem;
 
-  box-shadow: 0 5px 5px 5px black inset;
+  box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
 }
 
 .cuerpo-delante div:nth-child(4) {
   position: absolute;
   display: flex;
   background-color: rgb(59, 35, 194);
-  background-color: var(--naranja);
+  background-color: var(--naranja-claro);
 
-  box-shadow: 0 5px 5px 5px black inset;
-
-  width: 135px;
-  height: 225px;
+  /* box-shadow: 0.3rem 0.5rem 0.5rem 0.5rem black inset; */
+  box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
+  width: 13.5rem;
+  height: 22.5rem;
   border-radius: 50%;
-  top: 68px;
-  left: 48px;
+  top: 6.8rem;
+  left: 4.8rem;
 }
 /* /////////////////////////////////////// */
 .cuerpo-detras div:nth-child(1) {
   position: absolute;
   display: flex;
   background-color: rgb(4, 255, 71);
-  background-color: var(--naranja);
+  background-color: var(--naranja-claro);
 
-  box-shadow: 0 5px 5px 5px black inset;
+  box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
 
-  width: 110px;
-  height: 212px;
+  width: 11rem;
+  height: 21.2rem;
   border-radius: 49%;
-  top: 55px;
-  left: 71px;
+  top: 5.5rem;
+  left: 7.1rem;
 }
 
 .cuerpo-detras div:nth-child(2) {
   position: absolute;
   display: flex;
   background-color: rgb(255, 4, 4);
-  background-color: var(--naranja);
+  background-color: var(--naranja-claro);
 
-  box-shadow: 0 5px 5px 5px black inset;
+  box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
 
-  width: 110px;
-  height: 212px;
+  width: 11rem;
+  height: 21.2rem;
   border-radius: 49%;
-  top: 55px;
-  left: 121px;
+  top: 5.5rem;
+  left: 12.1rem;
 }
 
 .cuerpo-detras div:nth-child(3) {
   position: absolute;
   display: flex;
   background-color: rgb(7, 218, 246);
-  background-color: var(--naranja);
+  background-color: var(--naranja-claro);
 
-  box-shadow: 0 5px 5px 5px black inset;
+  box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
 
-  width: 120px;
-  height: 212px;
+  width: 12rem;
+  height: 21.2rem;
 
   border-radius: 50%;
-  top: 60px;
-  left: 150px;
+  top: 6rem;
+  left: 15rem;
 }
 
 .cuerpo-detras div:nth-child(4) {
   position: absolute;
   display: flex;
   background-color: rgb(255, 4, 205);
-  background-color: var(--naranja);
+  background-color: var(--naranja-claro);
 
-  box-shadow: 0 5px 5px 5px black inset;
+  box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
 
-  width: 120px;
-  height: 212px;
+  width: 12rem;
+  height: 21.2rem;
 
   border-radius: 49%;
-  top: 60px;
-  left: 31px;
+  top: 6rem;
+  left: 3.1rem;
 }
 
 /* /////////////////////////////////////// */
 .rabo {
   position: absolute;
 }
-.rabo div {
+.rabo > div:nth-child(1) {
   position: absolute;
   display: flex;
   /* background-color: rgba(4, 42, 255, 0.652); */
 
-  width: 180px;
-  height: 200px;
+  width: 18rem;
+  height: 20rem;
   border-radius: 35%;
-  top: 86px;
-  left: 62px;
+  top: 8.6rem;
+  left: 6.2rem;
 }
 
-.rabo div {
+.rabo > div:nth-child(1) {
   position: absolute;
   display: flex;
-  background-color: var(--cafe);
-  width: 27px;
-  height: 70px;
-  top: 20px;
-  left: 138px;
+  background-color: var(--cafe-claro);
+  width: 2.7rem;
+  height: 7rem;
+  top: 2rem;
+  left: 13.8rem;
   border-radius: 72% 0% 0% 0%;
+  box-shadow: 0 0.2rem 0.5rem 0.3rem var(--cafe-oscuro) inset;
 }
 
-.rabo div:before {
+.rabo > div:nth-child(1):before {
   content: '';
-  background-color: var(--cafe);
-  width: 23px;
-  height: 55px;
+  background-color: var(--cafe-claro);
+  width: 2.3rem;
+  height: 5.5rem;
   position: absolute;
   transform: rotateZ(35deg);
-  top: -17px;
-  left: 10px;
+  top: -1.7rem;
+  left: 1rem;
   border-radius: 35% 25% 0 45%;
+  box-shadow: 0 0.2rem 0.5rem 0.3rem var(--cafe-oscuro) inset;
 }
-.rabo div:after {
+.rabo > div:nth-child(1):after {
   content: '';
-  background-color: var(--cafe);
-  width: 30px;
-  height: 30px;
+  background-color: var(--cafe-claro);
+  width: 3rem;
+  height: 3rem;
   transform: rotateZ(45deg);
-  top: 40px;
+  top: 4rem;
   position: absolute;
+  box-shadow: 0 0rem 0.5rem 0.3rem var(--cafe-oscuro) inset;
+}
+
+.rabo > div:nth-child(2) {
+  background-color: var(--cafe-claro);
+  width: 0.3rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 15.1rem;
+  top: 5rem;
+  box-shadow: 0rem 0rem 0.4rem 0.9rem var(--cafe-claro);
 }
 /* ///////////////////////// */
 .cara {
-  width: 300px;
-  height: 300px;
+  width: 30rem;
+  height: 30rem;
   /* background-color: rgba(0, 0, 255, 0.296); */
 }
 .ojo-izquierdo {
   background-color: rgb(0, 255, 26);
   position: absolute;
-  width: 65px;
-  height: 35px;
-  top: 128px;
-  left: 170px;
+  width: 6.5rem;
+  height: 3.5rem;
+  top: 12.8rem;
+  left: 17rem;
 
-  border-top: 0px solid red;
-  border-right: 15px solid rgb(17, 0, 255);
-  border-bottom: 10px solid rgb(69, 171, 255);
-  border-left: 0px solid rgb(34, 255, 0);
+  border-top: 0rem solid red;
+  border-right: 1.5rem solid rgb(17, 0, 255);
+  border-bottom: 1rem solid rgb(69, 171, 255);
+  border-left: 0rem solid rgb(34, 255, 0);
 
   clip-path: polygon(84% 0, 0 91%, 100% 98%);
   transform: rotate(-10deg);
@@ -240,15 +266,15 @@ main {
 .ojo-derecho {
   background-color: rgb(0, 255, 26);
   position: absolute;
-  width: 65px;
-  height: 35px;
-  top: 128px;
-  left: 75px;
+  width: 6.5rem;
+  height: 3.5rem;
+  top: 12.8rem;
+  left: 7.5rem;
 
-  border-top: 0px solid red;
-  border-left: 15px solid rgb(0, 4, 255);
-  border-bottom: 10px solid rgb(69, 171, 255);
-  border-right: 0px solid rgb(34, 255, 0);
+  border-top: 0rem solid red;
+  border-left: 1.5rem solid rgb(0, 4, 255);
+  border-bottom: 1rem solid rgb(69, 171, 255);
+  border-right: 0rem solid rgb(34, 255, 0);
 
   clip-path: polygon(5% 0, 100% 90%, 0 98%);
   transform: rotate(10deg);
@@ -257,37 +283,37 @@ main {
 .nariz {
   background-color: rgb(0, 255, 26);
   position: absolute;
-  width: 50px;
-  height: 35px;
-  top: 165px;
-  left: 130px;
+  width: 5rem;
+  height: 3.5rem;
+  top: 16.5rem;
+  left: 13rem;
 
-  border-top: 0px solid red;
-  border-left: 13px solid rgb(0, 38, 255);
-  border-bottom: 7px solid rgb(253, 108, 255);
-  border-right: 13px solid rgb(51, 0, 255);
+  border-top: 0rem solid red;
+  border-left: 1.3rem solid rgb(0, 38, 255);
+  border-bottom: 0.7rem solid rgb(253, 108, 255);
+  border-right: 1.3rem solid rgb(51, 0, 255);
 
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
 }
 .nariz:after {
   position: absolute;
   content: '';
-  width: 40px;
-  height: 10px;
+  width: 4rem;
+  height: 1rem;
   background-color: rgb(47, 0, 255);
   transform: rotateZ(-67deg);
-  top: 3px;
-  left: -17px;
+  top: 0.3rem;
+  left: -1.7rem;
 }
 .nariz:before {
   position: absolute;
   content: '';
-  width: 40px;
-  height: 10px;
+  width: 4rem;
+  height: 1rem;
   background-color: rgb(0, 34, 255);
   transform: rotateZ(67deg);
-  top: 3px;
-  left: 1px;
+  top: 0.3rem;
+  left: 0.1rem;
 }
 .boca-izquierda {
   /* background-color: rgba(255, 13, 247, 0.329); */
@@ -295,8 +321,8 @@ main {
 
   width: 5em;
   height: 4em;
-  top: 190px;
-  left: 70px;
+  top: 19rem;
+  left: 7rem;
   border-bottom: 1.7em solid rgb(255, 255, 255);
   border-radius: 0 0 0 100%;
 }
@@ -307,48 +333,48 @@ main {
 
   width: 5em;
   height: 4em;
-  top: 190px;
-  left: 150px;
+  top: 19rem;
+  left: 15rem;
   border-bottom: 1.7em solid rgb(255, 255, 255);
   border-radius: 0 0 100% 0;
 }
 .contenedor-dientes {
   /* background-color: rgba(0, 255, 34, 0.182); */
-  width: 300px;
-  height: 300px;
+  width: 30rem;
+  height: 30rem;
   position: relative;
 }
 
 .contenedor-dientes > div {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: var(--naranja);
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--naranja-claro);
   /* background-color: blueviolet; */
 }
 
 .contenedor-dientes > div:nth-child(1) {
-  top: 215px;
-  left: 140px;
+  top: 21.5rem;
+  left: 14rem;
 }
 .contenedor-dientes > div:nth-child(2) {
-  top: 210px;
-  left: 95px;
+  top: 21rem;
+  left: 9.5rem;
   transform: rotateZ(20deg);
 }
 .contenedor-dientes > div:nth-child(3) {
-  top: 210px;
-  left: 185px;
+  top: 21rem;
+  left: 18.5rem;
   transform: rotateZ(-20deg);
 }
 .contenedor-dientes > div:nth-child(4) {
-  top: 240px;
-  left: 115px;
+  top: 24rem;
+  left: 11.5rem;
   transform: rotateZ(10deg);
 }
 .contenedor-dientes > div:nth-child(5) {
-  top: 240px;
-  left: 165px;
+  top: 24rem;
+  left: 16.5rem;
   transform: rotateZ(-10deg);
 }
 
@@ -364,7 +390,24 @@ main {
   width: 80%;
   height: 15%;
   border-radius: 100%;
-  bottom: 0;
   position: absolute;
-  box-shadow: 0px 0px 20px 20px black;
+  box-shadow: 0rem 0rem 2rem 2rem black;
+  bottom: 25px;
+
+  animation: sombra 1s linear infinite alternate-reverse;
+}
+
+/* ///////////////////////////////// */
+@keyframes sombra {
+  to {
+    width: 50%;
+    height: 10%;
+    box-shadow: 0rem 0rem 1rem 1rem black;
+  }
+}
+
+@keyframes calabaza {
+  to {
+    transform: translateY(-125px) scale(1, 1.05);
+  }
 }

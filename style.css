@@ -2,7 +2,11 @@
   --cafe-claro: rgb(113, 73, 63);
   --cafe-oscuro: rgb(67, 42, 36);
   --naranja-claro: rgb(255, 72, 0);
+  --naranja-claro: rgb(255, 55, 0);
+  /* --naranja-claro: rgb(255, 0, 0); */
+  /* --naranja-claro: rgb(255, 85, 37); */
   --naranja-oscuro: rgb(255, 0, 0);
+  --naranja-oscuro: rgb(191, 0, 38);
   --amarillo: rgb(249, 255, 165);
   --azul: rgb(0, 4, 255);
   --celeste: rgb(69, 171, 255);
@@ -28,13 +32,13 @@ body {
     rgb(2, 2, 136) 10%,
     rgb(0, 238, 255) 55%,
     rgb(46, 36, 36) 20%
-  );
+  ); */
 
-  background: linear-gradient(#082c0c 10%, #abc841 55%, #220a33 20%); */
+  background: linear-gradient(#082c0c 10%, #abc841 55%, #220a33 20%);
 
   background: linear-gradient(#082c0c 10%, #85ff60 55%, #220a33 20%);
 
-  /* box-shadow: 0 0 500px 50px black inset; */
+  box-shadow: 0 0 500px 50px black inset;
   overflow: hidden;
 }
 body::-webkit-scrollbar {
@@ -79,7 +83,7 @@ main {
   position: absolute;
   display: flex;
   background-color: var(--naranja-claro);
-  box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
+  box-shadow: 0 0rem 2rem 2rem var(--naranja-oscuro) inset;
 }
 .cuerpo-delante div:nth-child(1) {
   width: 13.5rem;

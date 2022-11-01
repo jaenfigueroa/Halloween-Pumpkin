@@ -2,12 +2,8 @@
   --cafe-claro: rgb(113, 73, 63);
   --cafe-oscuro: rgb(67, 42, 36);
   --naranja-claro: rgb(255, 72, 0);
-  /* --naranja-claro: rgb(255, 64, 0); */
-  /* --naranja-oscuro: rgb(255, 47, 0); */
   --naranja-oscuro: rgb(255, 0, 0);
   --amarillo: rgb(249, 255, 165);
-  /* --amarillo: rgb(255, 217, 0); */
-  /* --amarillo: rgb(98, 255, 67); */
 }
 
 * {
@@ -51,15 +47,12 @@ main {
 .calabaza {
   min-width: 30rem;
   min-height: 30rem;
-  /* background-color: rgb(203, 203, 203); */
-  /* background-image: url(./assets/4.jpg); */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 0.1rem solid black; */
 
   animation: calabaza 3s linear infinite alternate-reverse;
   transform: scale(1.1, 0.8);
@@ -68,21 +61,19 @@ main {
   position: absolute;
   width: 30rem;
   height: 30rem;
-  /* background-color: rgba(255, 0, 0, 0.307); */
 }
 .cuerpo-delante,
 .cuerpo-atras {
-  /* background-color: rgba(0, 0, 255, 0.233); */
   position: absolute;
 }
 
-.cuerpo-delante div:nth-child(1) {
+.cuerpo-delante div {
   position: absolute;
   display: flex;
-  background-color: rgb(67, 246, 7);
   background-color: var(--naranja-claro);
   box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
-
+}
+.cuerpo-delante div:nth-child(1) {
   width: 13.5rem;
   height: 20.5rem;
   border-radius: 50%;
@@ -91,13 +82,6 @@ main {
 }
 
 .cuerpo-delante div:nth-child(2) {
-  position: absolute;
-  display: flex;
-  background-color: rgb(246, 234, 7);
-  background-color: var(--naranja-claro);
-
-  box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
-
   width: 13.5rem;
   height: 21.2rem;
   border-radius: 50%;
@@ -106,28 +90,14 @@ main {
 }
 
 .cuerpo-delante div:nth-child(3) {
-  position: absolute;
-  display: flex;
-  background-color: rgb(204, 0, 255);
-  background-color: var(--naranja-claro);
-
   width: 13.5rem;
   height: 22.5rem;
   border-radius: 50%;
   top: 6.8rem;
   left: 12rem;
-
-  box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
 }
 
 .cuerpo-delante div:nth-child(4) {
-  position: absolute;
-  display: flex;
-  background-color: rgb(59, 35, 194);
-  background-color: var(--naranja-claro);
-
-  /* box-shadow: 0.3rem 0.5rem 0.5rem 0.5rem black inset; */
-  box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
   width: 13.5rem;
   height: 22.5rem;
   border-radius: 50%;
@@ -135,63 +105,33 @@ main {
   left: 4.8rem;
 }
 /* /////////////////////////////////////// */
-.cuerpo-detras div:nth-child(1) {
+.cuerpo-detras div {
   position: absolute;
   display: flex;
-  background-color: rgb(4, 255, 71);
   background-color: var(--naranja-claro);
-
   box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
-
   width: 11rem;
   height: 21.2rem;
+}
+.cuerpo-detras div:nth-child(1) {
   border-radius: 49%;
   top: 5.5rem;
   left: 7.1rem;
 }
 
 .cuerpo-detras div:nth-child(2) {
-  position: absolute;
-  display: flex;
-  background-color: rgb(255, 4, 4);
-  background-color: var(--naranja-claro);
-
-  box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
-
-  width: 11rem;
-  height: 21.2rem;
   border-radius: 49%;
   top: 5.5rem;
   left: 12.1rem;
 }
 
 .cuerpo-detras div:nth-child(3) {
-  position: absolute;
-  display: flex;
-  background-color: rgb(7, 218, 246);
-  background-color: var(--naranja-claro);
-
-  box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
-
-  width: 12rem;
-  height: 21.2rem;
-
   border-radius: 50%;
   top: 6rem;
   left: 15rem;
 }
 
 .cuerpo-detras div:nth-child(4) {
-  position: absolute;
-  display: flex;
-  background-color: rgb(255, 4, 205);
-  background-color: var(--naranja-claro);
-
-  box-shadow: 0 0.5rem 0.5rem 0.5rem var(--naranja-oscuro) inset;
-
-  width: 12rem;
-  height: 21.2rem;
-
   border-radius: 49%;
   top: 6rem;
   left: 3.1rem;
@@ -201,21 +141,11 @@ main {
 .tallo {
   position: absolute;
 }
-.tallo > div:nth-child(1) {
-  position: absolute;
-  display: flex;
-  /* background-color: rgba(4, 42, 255, 0.652); */
-
-  width: 18rem;
-  height: 20rem;
-  border-radius: 35%;
-  top: 8.6rem;
-  left: 6.2rem;
-}
 
 .tallo > div:nth-child(1) {
   position: absolute;
   display: flex;
+
   background-color: var(--cafe-claro);
   width: 2.7rem;
   height: 7rem;
@@ -269,10 +199,8 @@ main {
 .cara {
   width: 30rem;
   height: 30rem;
-  /* background-color: rgba(0, 0, 255, 0.296); */
 }
 .ojo-izquierdo {
-  background-color: var(--amarillo);
   background: linear-gradient(rgb(255, 214, 127), rgb(225, 255, 0));
   position: absolute;
   width: 6.5rem;
@@ -283,17 +211,12 @@ main {
   border-right: 1.5rem solid rgb(17, 0, 255);
   border-bottom: 1rem solid rgb(69, 171, 255);
 
-  border-right: 1.5rem solid rgb(17, 0, 255);
-  border-bottom: 1rem solid rgb(69, 171, 255);
-
   clip-path: polygon(84% 0, 0 91%, 100% 98%);
   transform: rotate(-10deg);
 }
 
 .ojo-derecho {
-  background-color: var(--amarillo);
   background: linear-gradient(rgb(255, 198, 145), rgb(225, 255, 0));
-
   position: absolute;
   width: 6.5rem;
   height: 3.5rem;
@@ -342,7 +265,6 @@ main {
   left: 0.1rem;
 }
 .boca-izquierda {
-  /* background-color: rgba(255, 13, 247, 0.329); */
   position: absolute;
 
   width: 5em;
@@ -355,7 +277,6 @@ main {
 }
 
 .boca-derecha {
-  /* background-color: rgba(255, 13, 247, 0.323); */
   position: absolute;
 
   width: 5em;
@@ -366,7 +287,6 @@ main {
   border-radius: 0 0 100% 0;
 }
 .contenedor-dientes {
-  /* background-color: rgba(0, 255, 34, 0.182); */
   width: 30rem;
   height: 30rem;
   position: relative;
@@ -377,7 +297,6 @@ main {
   width: 2rem;
   height: 2rem;
   background-color: var(--naranja-claro);
-  /* background-color: blueviolet; */
 }
 
 .contenedor-dientes > div:nth-child(1) {
@@ -407,7 +326,6 @@ main {
 
 /* //////////////////////////////// */
 .sombra {
-  /* background-color: rgba(21, 0, 255, 0.201); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -425,7 +343,6 @@ main {
 }
 
 .luna {
-  /* background-color: red; */
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -448,52 +365,42 @@ main {
 
 @keyframes sombra {
   0% {
-    /* background-color: blue; */
     transform: translateX(0px);
     width: 80%;
   }
   25% {
-    /* background-color: yellow; */
     transform: translateX(100px);
     width: 50%;
     height: 10%;
   }
   50% {
-    /* background-color: green; */
     transform: translateX(100px);
     width: 80%;
   }
   75% {
-    /* background-color: aqua; */
     transform: translateX(-100px);
     width: 50%;
     height: 10%;
   }
   100% {
-    /* background-color: red; */
     transform: translateX(-100px);
   }
 }
 
 @keyframes calabaza {
   0% {
-    /* background-color: blue; */
     transform: translateY(0px) scale(1.1, 0.8) translateX(0px);
   }
   25% {
-    /* background-color: yellow; */
     transform: translateY(-125px) scale(1, 1.05) translateX(100px);
   }
   50% {
-    /* background-color: green; */
     transform: translateY(0px) scale(1.1, 0.8) translateX(100px);
   }
   75% {
-    /* background-color: aqua; */
     transform: translateY(-125px) scale(1, 1.05) translateX(-100px);
   }
   100% {
-    /* background-color: red; */
     transform: translateY(0px) scale(1.1, 0.8) translateX(-100px);
   }
 }

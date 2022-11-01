@@ -1,9 +1,12 @@
 :root {
   --cafe-claro: rgb(113, 73, 63);
   --cafe-oscuro: rgb(67, 42, 36);
-  --naranja-claro: rgb(255, 89, 0);
-  --naranja-oscuro: rgb(255, 47, 0);
+  /* --naranja-claro: rgb(255, 89, 0); */
+  --naranja-claro: rgb(255, 64, 0);
+  /* --naranja-oscuro: rgb(255, 47, 0); */
+  --naranja-oscuro: rgb(255, 0, 0);
   --amarillo: rgb(249, 255, 165);
+  /* --amarillo: rgb(0, 255, 42); */
   /* --amarillo: rgb(255, 226, 10); */
   /* --amarillo: rgb(98, 255, 67); */
 }
@@ -25,7 +28,9 @@ body {
     rgb(46, 36, 36) 20%
   );
 
-  background: linear-gradient(#082c0c 10%, #abc841 55%, #001400 20%);
+  /* background: linear-gradient(#082c0c 10%, #abc841 55%, #001400 20%); */
+
+  background: linear-gradient(#082c0c 10%, #abc841 55%, #220a33 20%);
 }
 main {
   display: flex;

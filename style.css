@@ -326,13 +326,13 @@ main {
 .contenedor-dientes > div:nth-child(1) {
   top: 21.5rem;
   left: 14rem;
-  border-bottom: 5px solid var(--celeste);
+  border-bottom: 5px solid var(--azul);
 }
 .contenedor-dientes > div:nth-child(2) {
   top: 21rem;
   left: 9.5rem;
   transform: rotateZ(20deg);
-  border-bottom: 5px solid var(--celeste);
+  border-bottom: 5px solid var(--azul);
 }
 .contenedor-dientes > div:nth-child(3) {
   top: 21rem;
@@ -350,7 +350,7 @@ main {
   top: 24rem;
   left: 16.5rem;
   transform: rotateZ(-10deg);
-  border-top: 5px solid var(--celeste);
+  border-top: 5px solid var(--azul);
 }
 
 /* //////////////////////////////// */

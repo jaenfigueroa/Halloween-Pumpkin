@@ -206,6 +206,19 @@ main {
   top: 30px;
   position: absolute;
 }
+
+.tallo:after {
+  content: '';
+  width: 125px;
+  height: 50px;
+  position: absolute;
+  border-radius: 0 50% / 0 100%;
+  background: #5cb85c;
+  border: 3px solid #162016;
+  left: 10px;
+  top: -11px;
+  box-shadow: 0 0 50px 5px #162016 inset;
+}
 /* ///////////////////////// */
 .cara {
   width: 30rem;

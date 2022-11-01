@@ -38,7 +38,7 @@ body {
 
   background: linear-gradient(#082c0c 10%, #85ff60 55%, #220a33 20%);
 
-  box-shadow: 0 0 500px 50px black inset;
+  box-shadow: 0 0 500px 0px black inset;
   overflow: hidden;
 }
 body::-webkit-scrollbar {
@@ -177,7 +177,7 @@ main {
   top: -1.7rem;
   left: 1rem;
   border-radius: 35% 25% 0 45%;
-  box-shadow: 0 0.2rem 0.5rem 0.3rem var(--cafe-oscuro) inset;
+  box-shadow: 0 0.5rem 1rem 0.4rem var(--cafe-oscuro) inset;
 }
 .tallo > div:nth-child(1):after {
   content: '';
@@ -187,24 +187,23 @@ main {
   transform: rotateZ(45deg);
   top: 4rem;
   position: absolute;
-  box-shadow: 0 0rem 0.5rem 0.3rem var(--cafe-oscuro) inset;
+  box-shadow: 0 0rem 1rem 1rem var(--cafe-oscuro) inset;
 }
 
 .tallo > div:nth-child(2) {
   background-color: var(--cafe-claro);
-  width: 0.3rem;
+  width: 0.1rem;
   height: 1.8rem;
   position: absolute;
   left: 15.1rem;
   top: 5rem;
-  box-shadow: 0rem 0rem 0.4rem 0.9rem var(--cafe-claro);
-  border-radius: 100%;
+  box-shadow: 0rem 0rem 0.4rem 0.7rem var(--cafe-claro);
 }
 
 .tallo > div:nth-child(2):after {
   content: '';
   box-shadow: 0 0 15px 15px var(--cafe-oscuro);
-  top: 35px;
+  top: 30px;
   position: absolute;
 }
 /* ///////////////////////// */
